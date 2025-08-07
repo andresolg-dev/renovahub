@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 240 5.9% 10%; /* Near black */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 240 5.9% 10%;
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 240 5.9% 10%;
+
+    --primary: 45 100% 50%; /* #ffcc00 - Renova Yellow */
+    --primary-foreground: 0 0% 0%; /* Black text on yellow */
+
+    --secondary: 220 13% 91%; /* Light gray */
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 45 10% 80%; /* #d9d9c3 - Renova Light Beige */
+    --muted-foreground: 240 3.8% 46.1%; /* #848484 - Renova Text Gray */
+
+    --accent: 45 100% 50%; /* #ffcc00 - Renova Yellow */
+    --accent-foreground: 0 0% 0%; /* Black text on yellow */
+
+    --destructive: 0 84.2% 60.2%; /* Default red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%; /* #dddddd - Renova Border */
+    --input: 220 13% 91%;
+    --ring: 45 100% 50%; /* Renova Yellow for focus rings */
+
+    /* Sidebar variables */
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-accent: 45 100% 50%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-ring: 45 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 5.9% 10%; /* #0a0a0a - Renova Dark Gray */
+    --foreground: 240 4.8% 95.9%; /* White text */
+
+    --card: 240 5.9% 10%; /* #0a0a0a */
+    --card-foreground: 240 4.8% 95.9%;
+
+    --popover: 240 5.9% 10%; /* #0a0a0a */
+    --popover-foreground: 240 4.8% 95.9%;
+
+    --primary: 45 100% 50%; /* #ffcc00 - Renova Yellow */
+    --primary-foreground: 0 0% 0%; /* Black text on yellow */
+
+    --secondary: 240 3.7% 15.9%; /* Darker gray */
+    --secondary-foreground: 240 4.8% 95.9%;
+
+    --muted: 240 3.7% 15.9%; /* A darker gray for muted elements */
+    --muted-foreground: 240 3.8% 46.1%; /* #848484 - Renova Text Gray */
+
+    --accent: 45 100% 50%; /* #ffcc00 - Renova Yellow */
+    --accent-foreground: 0 0% 0%; /* Black text on yellow */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%; /* #aaaaaa - Renova Border Dark */
+    --input: 240 3.7% 15.9%;
+    --ring: 45 100% 50%; /* Renova Yellow for focus rings */
+
+    /* Sidebar variables for dark mode */
+    --sidebar: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-accent: 45 100% 50%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-ring: 45 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
